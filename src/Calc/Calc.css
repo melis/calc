@@ -1,0 +1,74 @@
+.table {
+  margin: 20px auto;
+}
+
+.table_head > div {
+  padding: 15px 20px;
+  border: 1px solid #fff;
+  width: 900px;
+  background-color: #4472c4;
+  color: #fff;
+}
+.table_list,
+.table_head,
+.table_input {
+  display: flex;
+}
+.table_input > div {
+  padding: 1px;
+}
+.table_head > div,
+.table_list > div,
+.table_input > div {
+  width: 25%;
+
+  display: inline-block;
+}
+.table_list {
+  padding: 5px;
+}
+.table_list > div {
+  padding: 5px 15px;
+  text-align: right;
+}
+
+.table_input > div > input {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+
+  padding: 5px 10px;
+  text-align: right;
+}
+
+.result > div {
+  padding: 10px 20px;
+  text-align: right;
+  border-bottom: 1px solid;
+}
+
+.indAndTask {
+  display: flex;
+}
+.indAndTask label {
+  cursor: pointer;
+}
+.indAndTask > div {
+  width: 50%;
+}
+
+.table_listbox > div:nth-child(odd) {
+  background-color: #b4c6e7;
+}
+.table_listbox > div:nth-child(even) {
+  background-color: #d9e1f2;
+}
+
+@media (max-width: 480px) {
+  .indAndTask {
+    display: block;
+  }
+  .indAndTask > div {
+    width: 100%;
+  }
+}
