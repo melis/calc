@@ -68,15 +68,15 @@ const Calc = (props) => {
         }
       });
     }
-    setResSclad(sl ? s.toFixed() : 0);
-    setResProiz(pl ? p.toFixed() : 0);
-    setResTrans(tl ? t.toFixed() : 0);
+    setResSclad(sl ? s.toFixed(2) : 0);
+    setResProiz(pl ? p.toFixed(2) : 0);
+    setResTrans(tl ? t.toFixed(2) : 0);
   }, [summSclad, summProiz, summTrans, data.length, data]);
 
   useEffect(() => {
-    setItog(resTrans + resSclad + resProiz);
+    setItog(Number(resTrans) + Number(resSclad) + Number(resProiz));
   }, [resTrans, resSclad, resProiz]);
-
+  //
   return (
     <>
       <div className="table">
